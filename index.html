@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Odin-Library</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link rel="icon" href="./ressources/book.png" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="nav">
+                    <h2>Odin-Library</h2>
+                    <button><h2>Log In</h2></button>
+                </div>
+            </div>
+        </div>
+
+        <section class="books">
+            <div class="flex">
+                <button class="add-book">
+                    <div class="add">
+                        <div class="plus">
+                            <div class="bar"></div>
+                            <div class="rotate bar"></div>
+                        </div>
+                        <h2>Add new book</h2>
+                    </div>
+                </button>
+            </div>
+
+            <div id="non-display" class="form">
+                <h2>Book</h2>
+                <div class="header-form">
+                    <div class="remove-form">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <input class="title" type="text" placeholder="Title" />
+                <input class="author" type="text" placeholder="Author" />
+                <input
+                    class="number"
+                    type="number"
+                    placeholder="Number Of Pages"
+                />
+                <div class="read">
+                    <h3>Have you read it?</h3>
+                    <input class="read-checkbox" type="checkbox" />
+                </div>
+                <button class="submit-button" type="submit">Submit</button>
+            </div>
+
+            <div class="wrapper container"></div>
+        </section>
+
+        <script src="index.js"></script>
+    </body>
+</html>
