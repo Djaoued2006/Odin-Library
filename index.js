@@ -7,17 +7,6 @@ class Book {
         return this;
     }
 
-    checkAlreadyExistedBook() {
-        const books = document.querySelector(".book-title");
-        if (books == null) return false;
-        for (let i = 0; i < books.length; i++) {
-            if (books[i].innerText == this.title) {
-                return true;
-            }
-        }
-        return false;
-    }
-
     setItem() {
         const div = document.createElement("div");
         div.classList.add("card");
@@ -83,7 +72,6 @@ const submitButton = document.querySelector(".submit-button");
 const removeFormButton = document.querySelector(".remove-form");
 const notReadColor = "rgb(131, 47, 68)";
 const readColor = "rgb(89 , 255 , 72)";
-const divBackground = document.querySelector("dialog");
 
 function removeForm() {
     Object.keys(info).forEach((key) => {
@@ -101,9 +89,6 @@ addBookButton.addEventListener("click", () => {
 removeFormButton.addEventListener("click", () => {
     removeForm();
 });
-
-let removeBooksButtons = document.querySelectorAll(".remove-book");
-let readButtons = document.querySelectorAll(".readButton");
 
 submitButton.addEventListener("click", () => {
     const book = new Book(
